@@ -60,7 +60,7 @@
                 </a>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->``
+            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="/cms/add-vehicle.php">
                     <i class="fas fa-fw fa-wrench"></i>
