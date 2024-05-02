@@ -31,22 +31,22 @@
                             <?php
                                 $customer_id = $row['CustomerID'];
                                 $sql = "SELECT Name FROM musteri WHERE Customer_id = $customer_id";
-                                $result = mysqli_query($connection, $sql);
-                                $userRow = mysqli_fetch_assoc($result);
+                                $customer_res = mysqli_query($connection, $sql);
+                                $userRow = mysqli_fetch_assoc($customer_res);
                                 $name = $userRow['Name'];
                                 echo '<td>'.$name.'</td>';
 
                                 $model_id = $row['CarModelID'];
                                 $sql = "SELECT ModelName FROM models WHERE Model_id = $model_id";
-                                $result = mysqli_query($connection, $sql);
-                                $modelRow = mysqli_fetch_assoc($result);
+                                $model_res = mysqli_query($connection, $sql);
+                                $modelRow = mysqli_fetch_assoc($model_res);
                                 $modelName = $modelRow['ModelName'];
                                 echo '<td>'.$modelName.'</td>';
 
                                 $service_id = $row['ServiceID'];
                                 $sql = "SELECT ServiceName FROM services WHERE ServiceID = $service_id";
-                                $result = mysqli_query($connection, $sql);
-                                $serviceRow = mysqli_fetch_assoc($result);
+                                $service_res = mysqli_query($connection, $sql);
+                                $serviceRow = mysqli_fetch_assoc($service_res);
                                 $serviceName = $serviceRow['ServiceName'];
                                 echo '<td>'.$serviceName.'</td>';
                                 

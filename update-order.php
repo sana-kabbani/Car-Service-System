@@ -8,6 +8,7 @@
     $orderDate = '';
     $totalPrice = '';
     $orderStatus = '';
+    $orderId;
 
     if(isset($_GET['update-order'])){
 
@@ -20,6 +21,7 @@
         $orderStatus = $orderRow['order_status'];
         $totalPrice = $orderRow['TotalAmount'];
 
+        $orderId = $id;
         $userId = $orderRow['CustomerID'];
         $serviceId = $orderRow['ServiceID'];
         $modelId = $orderRow['CarModelID'];
@@ -68,10 +70,14 @@
                 <input type="text" class="form-control" value="<?php echo $totalPrice ?>" disabled>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Order Status</label>
-                <input type="text" class="form-control" value="<?php echo $orderStatus ?>">
+            <label for="exampleFormControlInput1" class="form-label">Order Status</label>
+                <select class="form-control" name="orderStatus" aria-label="Default select example" required>
+                    <option value="<?php echo $orderStatus ?>"><?php echo $orderStatus ?></option>
+                    <option value="Order Processing">Order Processing</option>
+                    <option value="Order Done">Order Done</option>
+                </select>
             </div>
-            <button class="btn btn-primary" type="submit" name="add-vehicle-btn">Add Vehicle</button>
+            <button value="<?php echo $orderId ?>" class="btn btn-primary" type="submit" name="update-order">update order</button>
         </form>
     </div>
 </div>

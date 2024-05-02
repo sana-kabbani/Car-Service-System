@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['userId'])){
+        header('Location: ../cms/login.php?login-required=true');
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +39,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/cms/index.php">
-                <div class="sidebar-brand-text mx-3">Sana Kabbani</div>
+                <div class="sidebar-brand-text mx-3">Admin</div>
             </a>
 
             <!-- Divider -->
@@ -53,7 +60,7 @@
                 </a>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
+            <!-- Nav Item - Utilities Collapse Menu -->``
             <li class="nav-item">
                 <a class="nav-link collapsed" href="/cms/add-vehicle.php">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -176,7 +183,7 @@
                                     Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="../cms/backend/logout.php">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>

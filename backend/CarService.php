@@ -22,6 +22,8 @@ if(isset($_POST['add-customer-btn'])){
 # Delete customer
 if(isset($_GET['delete-customer'])){
     $id = $_GET['delete-customer'];
+    $sql = "DELETE FROM orders WHERE CustomerID=$id";
+    mysqli_query($connection, $sql);
     $sql = "DELETE FROM musteri WHERE Customer_id=$id;";
     mysqli_query($connection, $sql);
     header("Location: /CMS/customers.php?customer-deleted=true");
@@ -111,8 +113,17 @@ if(isset($_GET['delete-order'])){
     header("Location: /CMS/orders.php?order-deleted=true");
     exit();
 }
-# Order Update
 
+# Update order
+if(isset($_POST['update-order'])) {
+    $order_status = test_input($_POST['orderStatus']);
+    $orderId = test_input($_POST['update-order']);
+
+    $sql = "UPDATE orders SET order_status='$order_status' WHERE OrderID=$orderId";
+    mysqli_query($connection, $sql);
+    header("Location: /CMS/orders.php?order-updated=true");
+    exit();
+}
 
 /*create a function that will do all the checking for us (which is much more convenient than writing the same code over and over again). */
 function test_input($data) {
