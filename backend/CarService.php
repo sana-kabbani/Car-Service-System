@@ -84,26 +84,19 @@ if(isset($_POST['add-order-btn'])){
     $modelId = test_input($_POST['modelId']);
     $serviceId = test_input($_POST['serviceId']);
     
-    # Find the price of Service By Id
-    $sql = "SELECT Price FROM Services WHERE ServiceID = $serviceId";
-    $result = mysqli_query($connection, $sql);
-    $resultCheck = mysqli_num_rows($result);
-    if($resultCheck == 1){
+  
         # Mysql query for inserting the new customer into database...
-        $row = mysqli_fetch_assoc($result);
-        $price = $row['Price'];
-        $currentDateTime = date("Y-m-d H:i:s");
-        $order_status = "Order Taken";
+    $price = 1;
+    $currentDateTime = date("Y-m-d H:i:s");
+    $order_status = "Order Taken";
 
-        $new_sql = "INSERT INTO orders(CustomerID, CarModelID, ServiceID, OrderDate, order_status,TotalAmount) VALUES('$customerId','$modelId','$serviceId','$currentDateTime','$order_status', '$price');";
-        mysqli_query($connection, $new_sql);
-        header("Location: /CMS/orders.php?add-order=true");
-        exit();
-    }else {
-        header("Location: /CMS/orders.php?add-order=false");
-        exit();
+    $new_sql = "INSERT INTO orders(CustomerID, CarModelID, ServiceID, OrderDate, order_status,TotalAmount) VALUES('$customerId','$modelId','$serviceId','$currentDateTime','$order_status','$price');";
+    mysqli_query($connection, $new_sql);
+    header("Location: /CMS/orders.php?add-order=true");
+    exit();
+    
     }
-}
+
 
 # Order Delete
 if(isset($_GET['delete-order'])){

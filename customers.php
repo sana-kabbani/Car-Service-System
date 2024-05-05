@@ -13,25 +13,27 @@
                         <th>Full Name</th>
                         <th>Email Address</th>
                         <th>Phone Number</th>
-                        <th>City</th>
+                        <th>Total Spending</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php
-                    $sql = "SELECT * FROM musteri";
+                    $sql = "SELECT * FROM customer_spending";
                     $result = mysqli_query($connection, $sql);
                     $check = mysqli_num_rows($result);
                     if($check > 0){
                 ?>
                     <?php    while($row = mysqli_fetch_assoc($result)){ ?>
                         <tr>
-                            <td><?php  echo $row['Name']; ?></td>
+                            <td><?php  echo $row['customer_name']; ?></td>
                             <td><?php  echo $row['Email']; ?></td>
                             <td><?php  echo $row['Phone']; ?></td>
-                            <td><?php  echo $row['City']; ?></td>
+                            <td><?php  echo $row['total_spending']; ?></td>
+
+
                             <td>
-                            <a href="/cms/backend/CarService.php?delete-customer=<?php echo $row['Customer_id']; ?>" name="delete-customer" class="btn btn-danger">Delete</a>
+                            <a href="/cms/backend/CarService.php?delete-customer=<?php echo $row['customer_id']; ?>" name="delete-customer" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php

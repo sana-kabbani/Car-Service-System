@@ -14,7 +14,6 @@
                         <th>Mode Name</th>
                         <th>Year</th>
                         <th>KM</th>
-                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,9 +29,7 @@
                             <td><?php  echo $row['ModelName']; ?></td>
                             <td><?php  echo $row['Year']; ?></td>
                             <td><?php  echo $row['KM']; ?></td>
-                            <td>
-                            <a href="/cms/backend/CarService.php?delete-vehicle=<?php echo $row['Model_id']; ?>" name="delete-vehicle" class="btn btn-danger">Delete</a>
-                            </td>
+                           
                         </tr>
                     <?php
                         }
