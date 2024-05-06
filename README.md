@@ -2,7 +2,7 @@
 This project provides management database system for car service system. Users can add orders, customers, vehicles and services and also delete them and able to see datas from each table.
 
 # Developmemnt-Environment
-This project developt with Microsoft Visual Studio Code using PHP, HTML, CSS and JavaScript.
+This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, CSS and JavaScript.
 
 # How-to-Run
 1.Clone the repository to your local machine.
@@ -11,27 +11,23 @@ This project developt with Microsoft Visual Studio Code using PHP, HTML, CSS and
 
 3.And then open the task manager and go to services page. 
 
-4.Find MYSQL83 and stop it.
-
-![Ekran Görüntüsü (1664)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/47d4c45e-3f36-40d6-a335-4e0a555c86d8)
-
-5.Go to XAMPP Control Panel and start Apache and MySQL
+4.Go to XAMPP Control Panel and start Apache and MySQL
 
 ![Ekran Görüntüsü (1665)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/c3898ec7-c01e-41ab-b45a-39a307f979bc)
 
-6.Click admin in the MYSQL column.
+5.Click admin in the MYSQL row.
 
-7.In PHPMyAdmin go to import and import carservice.sql
+6.In PHPMyAdmin go to import and import carservice.sql
 
 ![Ekran Görüntüsü (1667)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/e37ebd42-a262-49bb-8fbd-bbaa62d7a421)
 
-8.Open the browser and search for localhost/cms/ 
+7.Open the browser and search for localhost/cms/ 
 
 ![Ekran Görüntüsü (1666)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/2585831b-e00e-4bd0-8f35-dcfead11c9a9)
 
 # Interface
 
-Here's interface examples from the project.
+1. Here's interface examples from the project.
 
 ![Ekran Görüntüsü (1660)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/eeda4b34-0d26-47d7-806e-77c61231f175)1. This is login page.
 
