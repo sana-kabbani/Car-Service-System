@@ -9,7 +9,7 @@ This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, C
 
 2.Firstly open the XAMP Server.
 
-3. In the XAMPP Control Panel, start Apache and MySQL
+3.In the XAMPP Control Panel, start Apache and MySQL
 
 ![Ekran Görüntüsü (1665)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/c3898ec7-c01e-41ab-b45a-39a307f979bc)
 
