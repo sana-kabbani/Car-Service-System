@@ -1,10 +1,10 @@
-# Car-Service-System
+# Car Service System
 This project provides management database system for car service system. Users can add orders, customers, vehicles and services and also delete them and able to see datas from each table.
 
-# Developmemnt-Environment
+# Developmemnt Environment
 This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, CSS and JavaScript.
 
-# How-to-Run
+# How to Run
 1.Clone the repository to your local machine.
 
 2.Firstly open the XAMP Server.
