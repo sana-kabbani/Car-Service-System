@@ -9,19 +9,17 @@ This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, C
 
 2.Firstly open the XAMP Server.
 
-3.And then open the task manager and go to services page. 
-
-4.Go to XAMPP Control Panel and start Apache and MySQL
+3. In the XAMPP Control Panel, start Apache and MySQL
 
 ![Ekran Görüntüsü (1665)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/c3898ec7-c01e-41ab-b45a-39a307f979bc)
 
-5.Click admin in the MYSQL row.
+4.Click admin in the MYSQL row.
 
-6.In PHPMyAdmin go to import and import carservice.sql
+5.In PHPMyAdmin go to import and import carservice.sql
 
 ![Ekran Görüntüsü (1667)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/e37ebd42-a262-49bb-8fbd-bbaa62d7a421)
 
-7.Open the browser and search for localhost/cms/ 
+6.Open the browser and search for localhost/cms/ 
 
 ![Ekran Görüntüsü (1666)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/2585831b-e00e-4bd0-8f35-dcfead11c9a9)
 
