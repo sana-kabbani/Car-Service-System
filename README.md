@@ -1,7 +1,7 @@
 # Car Service System
 This project provides management database system for car service system. Users can add orders, customers, vehicles and services and also delete them and able to see datas from each table.
 
-# Developmemnt Environment
+# Development Environment
 This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, CSS and JavaScript.
 
 # How to Run
