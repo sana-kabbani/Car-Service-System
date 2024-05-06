@@ -13,7 +13,7 @@ This project developt with Microsoft Visual Studio Code using PHP,MYSQL, HTML, C
 
 ![Ekran Görüntüsü (1665)](https://github.com/sana-kabbani/Car-Service-System/assets/152299536/c3898ec7-c01e-41ab-b45a-39a307f979bc)
 
-4.Click admin in the MYSQL row.
+4.Click admin in the MYSQL column.
 
 5.In PHPMyAdmin go to import and import carservice.sql
 
